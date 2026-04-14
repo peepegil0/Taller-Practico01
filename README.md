@@ -1,39 +1,44 @@
-#Taller Práctico 01: Ingeniería Inversa con XQuery y BaseX**
+# Taller Práctico 01: Ingeniería Inversa con XQuery y BaseX
 
 ## Descripción
 
-En este proyecto realizo una auditoría sobre un archivo XML que contiene información de infraestructura cloud. Para ello utilizo **XPath**, con el objetivo de extraer datos concretos de forma eficiente sin afectar al rendimiento del sistema.
+En este proyecto realizo una práctica de ingeniería inversa sobre un archivo XML utilizando el lenguaje XQuery y el entorno BaseX.
+
+El objetivo consiste en construir consultas FLWOR capaces de generar resultados concretos a partir de un XML dado (biblioteca.xml), sin modificar su estructura, aplicando lógica de filtrado, agregación y transformación de datos.
 
 ## Contenido del repositorio
 
-* **practica20260319.xml** → Archivo con los datos de la infraestructura
-* **practica20260319.xsd** → Esquema de validación del XML
-* **consultas_xpath.xbook** → Archivo con las consultas XPath realizadas
-* **README.md** → Explicación del proyecto
+- biblioteca.xml → Archivo XML con los datos de libros  
+- consultas.xq → Consultas XQuery desarrolladas (retos)  
+- README.md → Documentación del proyecto  
 
 ## Herramientas utilizadas
 
-* Visual Studio Code
-* Extensión **XPath Notebook**
-* Lenguaje **XPath**
+- Visual Studio Code  
+- BaseX (gestor de bases de datos XML)  
+- Lenguaje XQuery  
 
 ## Objetivo
 
-El **objetivo** de esta práctica es aprender a:
+El objetivo de esta práctica es aprender a:
 
-* Navegar por documentos XML
-* Utilizar expresiones XPath
-* Filtrar información mediante condiciones
-* Obtener datos específicos de forma eficiente
-* Repaso de expresiones regulares 
+- Utilizar consultas FLWOR (For, Let, Where, Order by, Return)  
+- Filtrar información en documentos XML  
+- Aplicar funciones como count(), number() o distinct-values()  
+- Generar resultados en formato XML y HTML  
+- Manejar correctamente el entorno BaseX  
 
 ## Retos realizados
 
-### **Reto 1:** 
-Filtrado por contenido y estado. El departamento de desarrollo necesita actualizar su bibliografía sobre diseño. Obtén los títulos de todos los recursos cuya categoría sea 'CSS' y que, además, estén marcados como disponibles (true).
-### **Reto 2:** 
-Atributos y negaciones. No todos nuestros recursos son documentos estándar. Queremos identificar aquellos materiales que tienen un formato especial. Selecciona los ID (el atributo id) de todos los recursos cuyo formato no sea "PDF".
-### **Reto 3:** 
-Manejo de múltiples nodos (Autores). La colaboración es clave en la ciencia. Localiza y muestra únicamente el nombre del primer autor de aquellos recursos que han sido publicados después del año 2015.
-### **Reto 4:** 
-Consultas de complejidad técnica (Nivel y Categoría). Buscamos material para un seminario avanzado de arquitectura de datos. Necesitamos los títulos de los recursos que pertenezcan a las categorías de "XPath" o "XSLT" y que tengan un nivel de dificultad de 5.
+### Reto 1: Filtro y ordenación
+Obtener los títulos de los libros de la categoría "programacion" cuyo precio sea superior a 30€, ordenados de forma descendente por título.
+
+### Reto 2: Agregación con LET
+Generar un informe mostrando cuántos libros tiene cada autor, filtrando únicamente aquellos autores con más de un libro.
+
+### Reto 3: Transformación a HTML
+Construir una lista HTML (<ul>) con todos los libros, indicando "¡Novedad!" en aquellos publicados después de 2022, incluyendo el precio en euros.
+
+## Conclusión
+
+Este taller permite pasar de simplemente leer XML a buscar la información de forma profesional, desarrollando consultas eficientes y estructuradas a tráves de XQuery.
