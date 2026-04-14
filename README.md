@@ -9,7 +9,7 @@ El objetivo consiste en construir consultas FLWOR capaces de generar resultados 
 ## Contenido del repositorio
 
 - biblioteca.xml → Archivo XML con los datos de libros  
-- consultas.xq → Consultas XQuery desarrolladas (retos)  
+- GilCuePepePrcatica01.txt → Consultas XQuery desarrolladas (retos)  
 - README.md → Documentación del proyecto  
 
 ## Herramientas utilizadas
