@@ -37,7 +37,7 @@ Obtener los títulos de los libros de la categoría "programacion" cuyo precio s
 Generar un informe mostrando cuántos libros tiene cada autor, filtrando únicamente aquellos autores con más de un libro.
 
 ### Reto 3: Transformación a HTML
-Construir una lista HTML (<ul>) con todos los libros, indicando "¡Novedad!" en aquellos publicados después de 2022, incluyendo el precio en euros.
+Construir una lista HTML con todos los libros, indicando "¡Novedad!" en aquellos publicados después de 2022, incluyendo el precio en euros.
 
 ## Conclusión
 
