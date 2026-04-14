@@ -1,4 +1,4 @@
-1. Muestra los títulos de los libros de la categoría "programacion" que valgan más de 30€, ordenados por título de la Z a la A. -->
+1. Muestra los títulos de los libros de la categoría "programacion" que valgan más de 30€, ordenados por título de la Z a la A. 
 
     for $libro in /biblioteca/libro[@categoria='programacion' and precio > 30]/titulo order by $libro descending
     return
@@ -7,7 +7,7 @@
     </resultado>
 
 
-2. Quiero un informe que nos diga cuántos libros tiene cada autor en nuestra biblioteca. Pero atención: solo queremos ver a los autores que tienen más de un libro.-->
+2. Quiero un informe que nos diga cuántos libros tiene cada autor en nuestra biblioteca. Pero atención: solo queremos ver a los autores que tienen más de un libro.
  
     for $autor in distinct-values (//autor)
     let $total := count (//libro[autor = $autor])
@@ -16,7 +16,7 @@
     </resultado>
 
 
-3. Generar una estructura de lista HTML (<ul>) donde cada elemento sea un libro. Si el libro es posterior a 2022, debe incluir el texto "¡Novedad!" al lado del título. El precio debe aparecer con el símbolo €. -->
+3. Generar una estructura de lista HTML (<ul>) donde cada elemento sea un libro. Si el libro es posterior a 2022, debe incluir el texto "¡Novedad!" al lado del título. El precio debe aparecer con el símbolo €. 
 
     for $libro in //libro 
     let $titulo  := $libro/titulo/text()
